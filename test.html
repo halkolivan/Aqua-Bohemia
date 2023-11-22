@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Increment/Decrement Example</title>
+    <style>
+      button {
+        font-size: 16px;
+        padding: 10px;
+        margin: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Number: <span id="number">0</span></h1>
+    <button id="increaseBtn">Increase</button>
+    <button id="decreaseBtn">Decrease</button>
+
+    <script>
+      // Get the number element
+      const numberElement = document.getElementById("number");
+      // Get the increase and decrease buttons
+      const increaseBtn = document.getElementById("increaseBtn");
+      const decreaseBtn = document.getElementById("decreaseBtn");
+
+      // Initial number value
+      let number = 0;
+
+      // Function to update the number element
+      const updateNumber = () => {
+        numberElement.textContent = number;
+      };
+
+      // Event listener for the increase button
+      increaseBtn.addEventListener("click", () => {
+        number++;
+        updateNumber();
+      });
+
+      // Event listener for the decrease button
+      decreaseBtn.addEventListener("click", () => {
+        number--;
+        updateNumber();
+      });
+    </script>
+  </body>
+</html>

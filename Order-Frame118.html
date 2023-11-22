@@ -21,10 +21,10 @@
             <a href="Catalog-Frame14.html">
               <div class="catalog"><strong>Каталог</strong></div>
             </a>
-            <a href="news - Ro.html">
+            <a href="news.html">
               <div class="blog"><strong>Блог</strong></div>
             </a>
-            <a href="go-to-pages">
+            <a href="">
               <div class="contacts"><strong>Контакты</strong></div>
             </a>
           </div>
@@ -35,10 +35,10 @@
           </a>
         </div>
         <div class="right-menu">
-          <a href="news.html">
+          <a href="Order-Frame118.html">
             <div class="Ru"><span>Ru</span></div>
           </a>
-          <a href="news - Ro.html">
+          <a href="Order-Ro-Frame118.html">
             <div class="Ro"><span>Ro</span></div>
           </a>
         </div>
@@ -57,29 +57,56 @@
           <div>
             <div>
               <label for="name">Имя*</label>
-              <input type="text" id="name" name="name" required />
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Роман"
+                required
+              />
             </div>
             <div>
               <label for="email">Email*</label>
-              <input type="email" id="email" name="email" required />
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="aqua@mail.ru"
+                required
+              />
             </div>
             <div>
               <label for="datepicker">Дата доставки*</label>
-              <input type="text" id="datepicker" name="data" required />
+              <input type="date" id="datepicker" name="data" required />
             </div>
           </div>
           <div>
             <div>
               <label for="phone">Номер телефона*</label>
-              <input type="text" id="phone" name="phone" required />
+              <input
+                type="number"
+                id="phone"
+                name="phone"
+                placeholder="0 789 37484"
+                required
+              />
             </div>
             <div>
               <label for="address">Адрес*</label>
-              <input type="text" id="address" name="address" required />
+              <input
+                type="text"
+                id="address"
+                name="address"
+                placeholder="Кишинёвб ул. Штефан Чел Маре 40"
+                required
+              />
             </div>
             <div class="Oz">
+              <input class="checkbox" type="checkbox" />
               <img src="/assets/images-frame80/image 17.png" alt="none img" />
-              <span>Отправить заявку</span>
+              <a href="">
+                <span>Отправить заявку</span>
+              </a>
             </div>
           </div>
         </form>
@@ -113,9 +140,16 @@
               <div class="number-item">
                 <span>Количество</span>
                 <div>
-                  <img src="/assets/images-frame80/minus.png" alt="none img" />
-                  <span>2</span
-                  ><img src="/assets/images-frame80/plus.png" alt="none img" />
+                  <button id="dec" class="dec">
+                    <img
+                      class="img-dec"
+                      src="/assets/images-frame80/minus.png"
+                      alt="none img"
+                    />
+                  </button>
+                  <span id="number">0</span>
+                  <button id="inc" class="inc"></button>
+                  <img src="/assets/images-frame80/plus.png" alt="none img" />
                 </div>
               </div>
             </div>
@@ -141,7 +175,7 @@
                 <span>Количество</span>
                 <div>
                   <img src="/assets/images-frame80/minus.png" alt="none img" />
-                  <span>2</span
+                  <span>0</span
                   ><img src="/assets/images-frame80/plus.png" alt="none img" />
                 </div>
               </div>
@@ -168,7 +202,7 @@
                 <span>Количество</span>
                 <div>
                   <img src="/assets/images-frame80/minus.png" alt="none img" />
-                  <span>2</span
+                  <span>0</span
                   ><img src="/assets/images-frame80/plus.png" alt="none img" />
                 </div>
               </div>
@@ -181,5 +215,6 @@
       <div>Copyright 2021 © All Rights Reserved.</div>
     </footer>
     <script src="javascript/js-base.js"></script>
+    <script src="javascript/numbers.js"></script>
   </body>
 </html>
